@@ -1,0 +1,30 @@
+                                                     Add3++
+
+Description :
+This application is a Full stack demo of minting of tokens in the wallet .
+The application is connected to a smart contract which enables minting of test tokens to any address in Goerli testnet.The application is dockerized .
+
+User flow :
+
+- User clicks on the connect button , the metamask connection popup opens up .
+- If the connected metamask chain is not GOERLI , the button to change the chain is shown up
+- Once the user is connected with GOERLI network , he gets the option to mint the tokens
+- The user is allowed to enter the address and amount of token to be minted
+- On clicking the mint button user will get the metamask permission screen to allow the mint operation
+- On the success of the minting , the data is stored to the backend and shown in the mint data list
+
+FRONTEND :
+
+Description:
+The front end of the project is created with React.js . The tailwind css is used in the project . React query is used to manage the api call states and data caching . Ether.js is used for the web3 related connections and operations.
+
+BACKEND :
+
+Description:
+The backend of the project is created with Node.js . Redis cloud is used as the database for storing the mint operation data .
+
+COMMAND :
+
+The whole application can be started by running `docker-compose up`  
+The port 8000 is assigned for Frontend
+The port 3001 is assigned for Backend
